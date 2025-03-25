@@ -103,10 +103,10 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1.5 }}
         >
-          "Transforming homes with stunning epoxy floors. Delivering fresh and dry fish straight from our farms. Moving your goods with reliable logistics."
+          {"Transforming homes with stunning epoxy floors. Delivering fresh and dry fish straight from our farms. Moving your goods with reliable logistics."}
         </motion.p>
         <motion.div className={styles.scrollPrompt}>
-          <p>Scroll UP</p>
+          <p>Scroll Down</p>
           <motion.div variants={arrowVariants} animate="animate">
             <FaArrowUp className={styles.arrow} />
           </motion.div>
