@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import styles from "../page.module.css";
-import { FaEnvelope, FaPhone, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaInstagram, FaFacebook } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -22,7 +22,7 @@ export default function Contact() {
           <p><FaPhone /> 08071465640, 07030276424</p>
           <p><FaEnvelope /> jeshuacasey@yahoo.co.uk</p>
           <p>
-            <FaTwitter /> @jeshfield | <FaFacebook />{" "}
+            <FaInstagram /> @jeshfield | <FaFacebook />{" "}
             <a href="http://www.facebook.com/jeshfieldnigeria">Facebook</a>
           </p>
         </div>
