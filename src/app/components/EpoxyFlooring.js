@@ -17,19 +17,29 @@ export default function EpoxyFlooring() {
       transition={{ duration: 1 }}
     >
       <div className={styles.sectionContent}>
-        <h1 className={styles.sectionTitle}><FaPaintRoller /> Epoxy Flooring</h1>
+        <h1 className={styles.sectionTitle}><FaPaintRoller className={styles.icon} /> Epoxy Flooring</h1>
         <p className={styles.sectionText}>
-          Elevate your spaces with our exquisite epoxy flooring solutions, crafted with precision and paired with expert designs.
+          Our epoxy flooring solutions elevate interiors with durability and elegance, crafted with precision and an eye for timeless design.
         </p>
         <motion.div className={styles.gallery} variants={galleryVariants} initial="hidden" animate="visible">
-          <motion.img src="/images/epoxy-flooring.jpg" alt="Epoxy Flooring" className={styles.galleryImage} variants={galleryVariants} />
-          <motion.img src="/images/epoxy.jpg" alt="Epoxy Sample" className={styles.galleryImage} variants={galleryVariants} />
-          <motion.img src="/images/epoxy2.jpg" alt="Epoxy Project" className={styles.galleryImage} variants={galleryVariants} />
+          <motion.div variants={galleryVariants}>
+            <img src="/images/epoxy-flooring.jpg" alt="Epoxy Flooring" className={styles.galleryImage} />
+            <p className={styles.mediaLabel}>Finished Epoxy Flooring</p>
+          </motion.div>
+          <motion.div variants={galleryVariants}>
+            <img src="/images/epoxy.jpg" alt="Epoxy Sample" className={styles.galleryImage} />
+            <p className={styles.mediaLabel}>Epoxy Coating Sample</p>
+          </motion.div>
+          <motion.div variants={galleryVariants}>
+            <img src="/images/epoxy2.jpg" alt="Epoxy Project" className={styles.galleryImage} />
+            <p className={styles.mediaLabel}>Epoxy Project in Progress</p>
+          </motion.div>
           <motion.div className={styles.videoWrapper} variants={galleryVariants}>
             <video controls className={styles.galleryVideo}>
               <source src="/images/epoxy.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            <p className={styles.mediaLabel}>Epoxy Application Process</p>
           </motion.div>
         </motion.div>
       </div>

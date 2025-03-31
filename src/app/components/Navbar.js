@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import styles from "../page.module.css";
-import { FaRocket, FaBars } from "react-icons/fa";
+import { FaBars, FaHome } from "react-icons/fa";
 import { useState } from "react";
 
 export default function Navbar({ setActiveSection, activeSection }) {
@@ -29,7 +29,7 @@ export default function Navbar({ setActiveSection, activeSection }) {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <FaRocket className={styles.logoIcon} />
+        <img src="/images/logo.png" alt="Jeshfield Global Logo" className={styles.logoImage} />
         <span className={styles.companyName}>Jeshfield Global</span>
       </motion.div>
       <div className={styles.desktopNav}>

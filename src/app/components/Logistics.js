@@ -17,12 +17,15 @@ export default function Logistics() {
       transition={{ duration: 1 }}
     >
       <div className={styles.sectionContent}>
-        <h1 className={styles.sectionTitle}><FaTruck /> Logistics Services</h1>
+        <h1 className={styles.sectionTitle}><FaTruck className={styles.icon} /> Logistics Services</h1>
         <p className={styles.sectionText}>
-          Seamless and dependable logistics solutions, ensuring your goods reach their destination with efficiency and care.
+          Dependable logistics solutions that ensure your goods travel seamlessly, delivered with efficiency and care.
         </p>
         <motion.div className={styles.gallery} variants={galleryVariants} initial="hidden" animate="visible">
-          <motion.img src="/images/dried-fish-ready-for-export.jpg" alt="Export Ready Fish" className={styles.galleryImage} variants={galleryVariants} />
+          <motion.div variants={galleryVariants}>
+            <img src="/images/dried-fish-ready-for-export.jpg" alt="Export Ready Fish" className={styles.galleryImage} />
+            <p className={styles.mediaLabel}>Dried Fish Ready for Export</p>
+          </motion.div>
         </motion.div>
       </div>
     </motion.section>

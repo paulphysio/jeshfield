@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -30,6 +30,10 @@ export default function Home() {
         return <About />;
     }
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [activeSection]);
 
   return (
     <div className={styles.page}>
