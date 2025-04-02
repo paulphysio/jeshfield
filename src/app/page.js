@@ -8,22 +8,25 @@ import FarmProducts from "./components/FarmProducts";
 import Logistics from "./components/Logistics";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import ImageModal from "./components/ImageModal";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [imageList, setImageList] = useState([]);
 
   const renderSection = () => {
     switch (activeSection) {
       case "about":
         return <About />;
       case "epoxy":
-        return <EpoxyFlooring />;
+        return <EpoxyFlooring setSelectedImage={setSelectedImage} setImageList={setImageList} />;
       case "farm":
-        return <FarmProducts />;
+        return <FarmProducts setSelectedImage={setSelectedImage} setImageList={setImageList} />;
       case "logistics":
-        return <Logistics />;
+        return <Logistics setSelectedImage={setSelectedImage} setImageList={setImageList} />;
       case "services":
-        return <Services />;
+        return <Services setSelectedImage={setSelectedImage} setImageList={setImageList} />;
       case "contact":
         return <Contact />;
       default:
@@ -39,6 +42,13 @@ export default function Home() {
     <div className={styles.page}>
       <Navbar setActiveSection={setActiveSection} activeSection={activeSection} />
       <div className={styles.content}>{renderSection()}</div>
+      {selectedImage && (
+        <ImageModal
+          image={selectedImage}
+          imageList={imageList}
+          onClose={() => setSelectedImage(null)}
+        />
+      )}
     </div>
   );
 }

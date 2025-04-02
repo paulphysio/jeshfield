@@ -1,12 +1,27 @@
 "use client";
 import { motion } from "framer-motion";
 import styles from "../page.module.css";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaPlay } from "react-icons/fa";
+import { useRef, useState } from "react";
 
 export default function About() {
   const sectionVariants = {
     hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
+  };
+
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlayPause = () => {
+    const video = videoRef.current;
+    if (video.paused) {
+      video.play();
+      setIsPlaying(true);
+    } else {
+      video.pause();
+      setIsPlaying(false);
+    }
   };
 
   return (
@@ -27,11 +42,14 @@ export default function About() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.5 }}
         >
-          <video controls className={styles.featureVideo}>
-            <source src="/images/jeshfield-global-about.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <p className={styles.mediaLabel}>Jeshfield Global Overview</p>
+          <div className={styles.videoWrapper}>
+            <video ref={videoRef} className={styles.featureVideo} controls>
+              <source src="/images/jeshfield-global-about.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            {!isPlaying && <FaPlay className={styles.playIcon} onClick={handlePlayPause} />}
+            <p className={styles.mediaLabel}>Jeshfield Global Overview</p>
+          </div>
         </motion.div>
       </div>
     </motion.section>

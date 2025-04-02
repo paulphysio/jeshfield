@@ -1,12 +1,46 @@
 "use client";
 import { motion } from "framer-motion";
 import styles from "../page.module.css";
-import { FaPaintRoller } from "react-icons/fa";
+import { FaPaintRoller, FaPlay } from "react-icons/fa";
+import { useRef, useState } from "react";
 
-export default function EpoxyFlooring() {
+export default function EpoxyFlooring({ setSelectedImage, setImageList }) {
   const galleryVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut", staggerChildren: 0.2 } },
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { 
+        duration: 0.6, 
+        ease: "easeOut", 
+        staggerChildren: 0.2 
+      } 
+    },
+  };
+
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const images = [
+    { src: "/images/epoxy-flooring.jpg", label: "Finished Epoxy Flooring" },
+    { src: "/images/epoxy.jpg", label: "Epoxy Coating Sample" },
+    { src: "/images/epoxy2.jpg", label: "Epoxy Project in Progress" },
+  ];
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+    setImageList(images);
+  };
+
+  const handlePlayPause = () => {
+    const video = videoRef.current;
+    if (video.paused) {
+      video.play();
+      setIsPlaying(true);
+    } else {
+      video.pause();
+      setIsPlaying(false);
+    }
   };
 
   return (
@@ -22,23 +56,18 @@ export default function EpoxyFlooring() {
           Our epoxy flooring solutions elevate interiors with durability and elegance, crafted with precision and an eye for timeless design.
         </p>
         <motion.div className={styles.gallery} variants={galleryVariants} initial="hidden" animate="visible">
-          <motion.div variants={galleryVariants}>
-            <img src="/images/epoxy-flooring.jpg" alt="Epoxy Flooring" className={styles.galleryImage} />
-            <p className={styles.mediaLabel}>Finished Epoxy Flooring</p>
-          </motion.div>
-          <motion.div variants={galleryVariants}>
-            <img src="/images/epoxy.jpg" alt="Epoxy Sample" className={styles.galleryImage} />
-            <p className={styles.mediaLabel}>Epoxy Coating Sample</p>
-          </motion.div>
-          <motion.div variants={galleryVariants}>
-            <img src="/images/epoxy2.jpg" alt="Epoxy Project" className={styles.galleryImage} />
-            <p className={styles.mediaLabel}>Epoxy Project in Progress</p>
-          </motion.div>
+          {images.map((image, index) => (
+            <motion.div key={index} variants={galleryVariants} onClick={() => handleImageClick(image)}>
+              <img src={image.src} alt={image.label} className={styles.galleryImage} />
+              <p className={styles.mediaLabel}>{image.label}</p>
+            </motion.div>
+          ))}
           <motion.div className={styles.videoWrapper} variants={galleryVariants}>
-            <video controls className={styles.galleryVideo}>
+            <video ref={videoRef} className={styles.galleryVideo} controls>
               <source src="/images/epoxy.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            {!isPlaying && <FaPlay className={styles.playIcon} onClick={handlePlayPause} />}
             <p className={styles.mediaLabel}>Epoxy Application Process</p>
           </motion.div>
         </motion.div>

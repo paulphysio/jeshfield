@@ -3,10 +3,19 @@ import { motion } from "framer-motion";
 import styles from "../page.module.css";
 import { FaTruck } from "react-icons/fa";
 
-export default function Logistics() {
+export default function Logistics({ setSelectedImage, setImageList }) {
   const galleryVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
+  const images = [
+    { src: "/images/dried-fish-ready-for-export.jpg", label: "Dried Fish Ready for Export" },
+  ];
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+    setImageList(images);
   };
 
   return (
@@ -22,10 +31,12 @@ export default function Logistics() {
           Dependable logistics solutions that ensure your goods travel seamlessly, delivered with efficiency and care.
         </p>
         <motion.div className={styles.gallery} variants={galleryVariants} initial="hidden" animate="visible">
-          <motion.div variants={galleryVariants}>
-            <img src="/images/dried-fish-ready-for-export.jpg" alt="Export Ready Fish" className={styles.galleryImage} />
-            <p className={styles.mediaLabel}>Dried Fish Ready for Export</p>
-          </motion.div>
+          {images.map((image, index) => (
+            <motion.div key={index} variants={galleryVariants} onClick={() => handleImageClick(image)}>
+              <img src={image.src} alt={image.label} className={styles.galleryImage} />
+              <p className={styles.mediaLabel}>{image.label}</p>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </motion.section>
