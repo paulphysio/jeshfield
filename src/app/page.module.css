@@ -170,7 +170,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4rem;
-  color: #A0522D; /* Medium brown */
+  color: transparent; /* Medium brown */
   opacity: 0.8;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -179,7 +179,7 @@
 .videoWrapper:hover .playIcon {
   transform: translate(-50%, -50%) scale(1.2);
   opacity: 1;
-  color: #87CEEB; /* Sky blue */
+  color: transparent; /* Sky blue */
 }
 
 /* Gallery */
