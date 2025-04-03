@@ -14,7 +14,15 @@ export default function FarmProducts({ setSelectedImage, setImageList }) {
 
   const galleryVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut", staggerChildren: 0.2 } },
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { 
+        duration: 0.6, 
+        ease: "easeOut", 
+        staggerChildren: 0.2 
+      } 
+    },
   };
 
   const farmMedia = {
@@ -24,13 +32,14 @@ export default function FarmProducts({ setSelectedImage, setImageList }) {
       { type: "image", src: "/images/bird.jpeg", label: "Livestock Birds", category: "Birds" },
       { type: "image", src: "/images/cassava.jpeg", label: "Cassava Harvest", category: "Cassava" },
       { type: "image", src: "/images/vegetables.jpeg", label: "Fresh Vegetables", category: "Vegetables" },
-      { type: "image", src: "/images/periwinkle.jpeg", label: "Periwinkle Catch", category: "Seafood" },
-      { type: "image", src: "/images/crayfish.jpeg", label: "Fresh Crayfish", category: "Seafood" },
+      { type: "image", src: "/images/periwinkle.jpeg", label: "Periwinkle Catch", category: "Crayfish and Periwinkle" },
+      { type: "image", src: "/images/crayfish.jpeg", label: "Fresh Crayfish", category: "Crayfish and Periwinkle" },
       { type: "image", src: "/images/dried-snail.jpg", label: "Dried Snails", category: "Snail" },
       { type: "image", src: "/images/dried-fish-ready-for-export.jpg", label: "Dried Fish for Export", category: "Fish" },
       { type: "image", src: "/images/smoked-catfish.jpg", label: "Smoked Catfish", category: "Fish" },
       { type: "image", src: "/images/smokedcatfish.jpg", label: "Smoked Catfish Variant", category: "Fish" },
-      { type: "image", src: "/images/sealed-crayfish-ready-for-export.jpg", label: "Sealed Crayfish for Export", category: "Seafood" },
+      { type: "image", src: "/images/sealed-crayfish-ready-for-export.jpg", label: "Sealed Crayfish for Export", category: "Crayfish and Periwinkle" },
+      { type: "image", src: "/images/turkey.jpeg", label: "Livestock Turkeys", category: "Birds" },
       { type: "video", src: "/images/catfish.mp4", label: "Catfish Farming Process", category: "Fish", ref: catfishVideoRef, isPlaying: isCatfishPlaying, setIsPlaying: setIsCatfishPlaying },
       { type: "video", src: "/images/cassava-farm.mp4", label: "Cassava Farm Tour", category: "Cassava", ref: cassavaVideoRef, isPlaying: isCassavaPlaying, setIsPlaying: setIsCassavaPlaying },
     ],
@@ -47,6 +56,7 @@ export default function FarmProducts({ setSelectedImage, setImageList }) {
     ],
     Birds: [
       { type: "image", src: "/images/bird.jpeg", label: "Livestock Birds", category: "Birds" },
+      { type: "image", src: "/images/turkey.jpeg", label: "Livestock Turkeys", category: "Birds" },
     ],
     Cassava: [
       { type: "image", src: "/images/cassava.jpeg", label: "Cassava Harvest", category: "Cassava" },
@@ -55,14 +65,14 @@ export default function FarmProducts({ setSelectedImage, setImageList }) {
     Vegetables: [
       { type: "image", src: "/images/vegetables.jpeg", label: "Fresh Vegetables", category: "Vegetables" },
     ],
-    Seafood: [
-      { type: "image", src: "/images/periwinkle.jpeg", label: "Periwinkle Catch", category: "Seafood" },
-      { type: "image", src: "/images/crayfish.jpeg", label: "Fresh Crayfish", category: "Seafood" },
-      { type: "image", src: "/images/sealed-crayfish-ready-for-export.jpg", label: "Sealed Crayfish for Export", category: "Seafood" },
+    "Crayfish and Periwinkle": [
+      { type: "image", src: "/images/periwinkle.jpeg", label: "Periwinkle Catch", category: "Crayfish and Periwinkle" },
+      { type: "image", src: "/images/crayfish.jpeg", label: "Fresh Crayfish", category: "Crayfish and Periwinkle" },
+      { type: "image", src: "/images/sealed-crayfish-ready-for-export.jpg", label: "Sealed Crayfish for Export", category: "Crayfish and Periwinkle" },
     ],
   };
 
-  const categories = ["All", "Snail", "Fish", "Birds", "Cassava", "Vegetables", "Seafood"];
+  const categories = ["All", "Snail", "Fish", "Birds", "Cassava", "Vegetables", "Crayfish and Periwinkle"];
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
@@ -116,7 +126,12 @@ export default function FarmProducts({ setSelectedImage, setImageList }) {
                   <source src={item.src} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-                {!item.isPlaying && <FaPlay className={styles.playIcon} onClick={() => handlePlayPause(item.ref, item.setIsPlaying)} />}
+                {!item.isPlaying && (
+                  <FaPlay
+                    className={styles.playIcon}
+                    onClick={() => handlePlayPause(item.ref, item.setIsPlaying)}
+                  />
+                )}
                 <p className={styles.mediaLabel}>{item.label}</p>
               </motion.div>
             )
