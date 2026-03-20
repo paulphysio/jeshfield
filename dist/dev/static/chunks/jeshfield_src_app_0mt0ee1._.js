@@ -1081,36 +1081,12 @@ function About() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute inset-0 flex items-center justify-center text-cream/60",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-center",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/images/logo.png",
-                                                            alt: "Jeshfield Global",
-                                                            className: "w-full h-full object-cover"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                            lineNumber: 80,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                        lineNumber: 79,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-lg font-medium",
-                                                        children: "Jeshfield Global"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                        lineNumber: 86,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
+                                            className: "absolute inset-0 flex items-center justify-center",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: "/images/logo.png",
+                                                alt: "Jeshfield Global",
+                                                className: "w-full h-full object-cover"
+                                            }, void 0, false, {
                                                 fileName: "[project]/jeshfield/src/app/components/About.js",
                                                 lineNumber: 78,
                                                 columnNumber: 17
@@ -1124,14 +1100,14 @@ function About() {
                                             className: "absolute -bottom-4 -right-4 w-24 h-24 bg-accent rounded-lg -z-10"
                                         }, void 0, false, {
                                             fileName: "[project]/jeshfield/src/app/components/About.js",
-                                            lineNumber: 90,
+                                            lineNumber: 85,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "absolute -top-4 -left-4 w-24 h-24 border-2 border-primary rounded-lg -z-10"
                                         }, void 0, false, {
                                             fileName: "[project]/jeshfield/src/app/components/About.js",
-                                            lineNumber: 91,
+                                            lineNumber: 86,
                                             columnNumber: 15
                                         }, this)
                                     ]
@@ -1164,7 +1140,7 @@ function About() {
                                         children: "A Beacon of Excellence in Nigeria"
                                     }, void 0, false, {
                                         fileName: "[project]/jeshfield/src/app/components/About.js",
-                                        lineNumber: 101,
+                                        lineNumber: 96,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1172,7 +1148,7 @@ function About() {
                                         children: "Jeshfield Global stands as a beacon of excellence in Nigeria's evolving industrial landscape. We represent the perfect fusion of time-honored tradition and cutting-edge innovation, delivering premium solutions across epoxy flooring, sustainable agriculture, and precision logistics."
                                     }, void 0, false, {
                                         fileName: "[project]/jeshfield/src/app/components/About.js",
-                                        lineNumber: 104,
+                                        lineNumber: 99,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1180,7 +1156,7 @@ function About() {
                                         children: "Founded on principles of integrity and quality, we have grown to become a trusted partner for businesses and individuals seeking excellence. Our commitment to sustainability and community development drives every decision we make."
                                     }, void 0, false, {
                                         fileName: "[project]/jeshfield/src/app/components/About.js",
-                                        lineNumber: 109,
+                                        lineNumber: 104,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1206,12 +1182,12 @@ function About() {
                                                             className: "w-6 h-6 text-accent"
                                                         }, void 0, false, {
                                                             fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                            lineNumber: 124,
+                                                            lineNumber: 119,
                                                             columnNumber: 19
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                        lineNumber: 123,
+                                                        lineNumber: 118,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1219,7 +1195,7 @@ function About() {
                                                         children: "Our Mission"
                                                     }, void 0, false, {
                                                         fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                        lineNumber: 126,
+                                                        lineNumber: 121,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1227,13 +1203,13 @@ function About() {
                                                         children: "To deliver exceptional quality and innovative solutions that transform spaces, nourish communities, and connect businesses across Nigeria."
                                                     }, void 0, false, {
                                                         fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                        lineNumber: 127,
+                                                        lineNumber: 122,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                lineNumber: 117,
+                                                lineNumber: 112,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1256,12 +1232,12 @@ function About() {
                                                             className: "w-6 h-6 text-primary"
                                                         }, void 0, false, {
                                                             fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                            lineNumber: 140,
+                                                            lineNumber: 135,
                                                             columnNumber: 19
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                        lineNumber: 139,
+                                                        lineNumber: 134,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1269,7 +1245,7 @@ function About() {
                                                         children: "Our Vision"
                                                     }, void 0, false, {
                                                         fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                        lineNumber: 142,
+                                                        lineNumber: 137,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1277,25 +1253,25 @@ function About() {
                                                         children: "To be Africa's most trusted enterprise, recognized for excellence, innovation, and sustainable impact across multiple industries."
                                                     }, void 0, false, {
                                                         fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                        lineNumber: 143,
+                                                        lineNumber: 138,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                lineNumber: 133,
+                                                lineNumber: 128,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/jeshfield/src/app/components/About.js",
-                                        lineNumber: 116,
+                                        lineNumber: 111,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/jeshfield/src/app/components/About.js",
-                                lineNumber: 96,
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -1323,7 +1299,7 @@ function About() {
                                 children: "Our Core Values"
                             }, void 0, false, {
                                 fileName: "[project]/jeshfield/src/app/components/About.js",
-                                lineNumber: 158,
+                                lineNumber: 153,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1351,12 +1327,12 @@ function About() {
                                                     className: "w-7 h-7 text-accent"
                                                 }, void 0, false, {
                                                     fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                    lineNumber: 172,
+                                                    lineNumber: 167,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                lineNumber: 171,
+                                                lineNumber: 166,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1364,7 +1340,7 @@ function About() {
                                                 children: value.title
                                             }, void 0, false, {
                                                 fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                lineNumber: 174,
+                                                lineNumber: 169,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$jeshfield$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1372,24 +1348,24 @@ function About() {
                                                 children: value.description
                                             }, void 0, false, {
                                                 fileName: "[project]/jeshfield/src/app/components/About.js",
-                                                lineNumber: 175,
+                                                lineNumber: 170,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, value.title, true, {
                                         fileName: "[project]/jeshfield/src/app/components/About.js",
-                                        lineNumber: 163,
+                                        lineNumber: 158,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/jeshfield/src/app/components/About.js",
-                                lineNumber: 161,
+                                lineNumber: 156,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/jeshfield/src/app/components/About.js",
-                        lineNumber: 153,
+                        lineNumber: 148,
                         columnNumber: 9
                     }, this)
                 ]

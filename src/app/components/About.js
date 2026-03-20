@@ -73,18 +73,13 @@ export default function About() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div className="aspect-[4/3] bg-gradient-to-br from-primary to-primary-light" />
-              {/* Placeholder for actual image */}
-              <div className="absolute inset-0 flex items-center justify-center text-cream/60">
-                <div className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden">
-                    <img 
-                      src="/images/logo.png" 
-                      alt="Jeshfield Global"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <p className="text-lg font-medium">Jeshfield Global</p>
-                </div>
+              {/* Logo covering entire area */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <img 
+                  src="/images/logo.png" 
+                  alt="Jeshfield Global"
+                  className="w-full h-full object-cover"
+                />
               </div>
               {/* Decorative Elements */}
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent rounded-lg -z-10" />
