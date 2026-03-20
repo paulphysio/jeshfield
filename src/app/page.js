@@ -1,54 +1,36 @@
-"use client";
-import { useState, useEffect } from "react";
-import styles from "./page.module.css";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import EpoxyFlooring from "./components/EpoxyFlooring";
-import FarmProducts from "./components/FarmProducts";
-import Logistics from "./components/Logistics";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
-import ImageModal from "./components/ImageModal";
+'use client';
+
+import { useEffect } from 'react';
+import LoadingScreen from './components/LoadingScreen';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import WhyChooseUs from './components/WhyChooseUs';
+import Gallery from './components/Gallery';
+import Testimonials from './components/Testimonials';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState("about");
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [imageList, setImageList] = useState([]);
-
-  const renderSection = () => {
-    switch (activeSection) {
-      case "about":
-        return <About />;
-      case "epoxy":
-        return <EpoxyFlooring setSelectedImage={setSelectedImage} setImageList={setImageList} />;
-      case "farm":
-        return <FarmProducts setSelectedImage={setSelectedImage} setImageList={setImageList} />;
-      case "logistics":
-        return <Logistics setSelectedImage={setSelectedImage} setImageList={setImageList} />;
-      case "services":
-        return <Services setSelectedImage={setSelectedImage} setImageList={setImageList} />;
-      case "contact":
-        return <Contact />;
-      default:
-        return <About />;
-    }
-  };
-
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [activeSection]);
+    // Scroll to top on page load/refresh
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <div className={styles.page}>
-      <Navbar setActiveSection={setActiveSection} activeSection={activeSection} />
-      <div className={styles.content}>{renderSection()}</div>
-      {selectedImage && (
-        <ImageModal
-          image={selectedImage}
-          imageList={imageList}
-          onClose={() => setSelectedImage(null)}
-        />
-      )}
-    </div>
+    <LoadingScreen>
+      <main className="relative">
+        <Navbar />
+        <Hero />
+        <About />
+        <Services />
+        <WhyChooseUs />
+        <Gallery />
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </main>
+    </LoadingScreen>
   );
 }
