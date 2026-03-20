@@ -258,6 +258,7 @@ export default function Gallery() {
                   <img
                     src={item.image}
                     alt={item.title}
+                    loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 )}
@@ -325,6 +326,7 @@ export default function Gallery() {
                 <img
                   src={selectedImage.image}
                   alt={selectedImage.title}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               )}
