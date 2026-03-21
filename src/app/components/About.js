@@ -16,22 +16,22 @@ const values = [
   {
     icon: HiOutlineShieldCheck,
     title: 'Excellence',
-    description: 'We maintain the highest standards in every project we undertake.',
+    description: 'Highest standards in every project.',
   },
   {
     icon: HiOutlineHeart,
     title: 'Integrity',
-    description: 'Trust and transparency form the foundation of our business.',
+    description: 'Trust and transparency first.',
   },
   {
     icon: HiOutlineLightningBolt,
     title: 'Innovation',
-    description: 'We embrace modern techniques while honoring traditional values.',
+    description: 'Modern solutions, proven methods.',
   },
   {
     icon: HiOutlineUsers,
     title: 'Partnership',
-    description: 'We build lasting relationships with clients and communities.',
+    description: 'Building lasting relationships.',
   },
 ];
 
@@ -93,18 +93,12 @@ export default function About() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h3 className="text-2xl sm:text-3xl font-bold text-dark mb-6">
-              A Beacon of Excellence in Nigeria
+            <h3 className="text-2xl sm:text-3xl font-bold text-dark mb-4">
+              Excellence in Every Detail
             </h3>
-            <p className="text-dark/70 leading-relaxed mb-6">
-              Jeshfield Global stands as a beacon of excellence in Nigeria&#39;s evolving industrial landscape. 
-              We represent the perfect fusion of time-honored tradition and cutting-edge innovation, 
-              delivering premium solutions across epoxy flooring, sustainable agriculture, and precision logistics.
-            </p>
-            <p className="text-dark/70 leading-relaxed mb-8">
-              Founded on principles of integrity and quality, we have grown to become a trusted partner 
-              for businesses and individuals seeking excellence. Our commitment to sustainability and 
-              community development drives every decision we make.
+            <p className="text-dark/70 text-lg mb-6">
+              Premium epoxy flooring, sustainable agriculture, and precision logistics. 
+              We deliver quality that speaks for itself.
             </p>
 
             {/* Mission & Vision Cards */}
@@ -120,8 +114,7 @@ export default function About() {
                 </div>
                 <h4 className="text-lg font-bold text-dark mb-2">Our Mission</h4>
                 <p className="text-sm text-dark/70">
-                  To deliver exceptional quality and innovative solutions that transform spaces, 
-                  nourish communities, and connect businesses across Nigeria.
+                  Transform spaces, nourish communities, connect businesses.
                 </p>
               </motion.div>
 
@@ -136,8 +129,7 @@ export default function About() {
                 </div>
                 <h4 className="text-lg font-bold text-dark mb-2">Our Vision</h4>
                 <p className="text-sm text-dark/70">
-                  To be Africa&apos;s most trusted enterprise, recognized for excellence, 
-                  innovation, and sustainable impact across multiple industries.
+                  Africa&apos;s most trusted enterprise for excellence and innovation.
                 </p>
               </motion.div>
             </div>
