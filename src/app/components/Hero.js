@@ -96,7 +96,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-lg sm:text-xl text-cream/80 max-w-3xl mx-auto mb-10 leading-relaxed"
         >
-          From luxury epoxy flooring to premium agriculture and precision logistics, 
+          From luxury epoxy flooring to premium agriculture, precision logistics, and general contracting, 
           Jeshfield Global delivers unmatched quality. We blend innovation with tradition 
           to redefine excellence in Nigeria and beyond.
         </motion.p>
@@ -138,7 +138,7 @@ export default function Hero() {
           {[
             { value: '10+', label: 'Years Experience' },
             { value: '500+', label: 'Projects Completed' },
-            { value: '3', label: 'Industries' },
+            { value: '4', label: 'Industries' },
             { value: '100%', label: 'Satisfaction' },
           ].map((stat, index) => (
             <motion.div

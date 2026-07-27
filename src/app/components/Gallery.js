@@ -153,6 +153,27 @@ const galleryItems = [
     description: 'Crayfish ready for export',
     image: '/images/sealed-crayfish-ready-for-export.jpg',
   },
+  {
+    id: 18,
+    category: 'construction',
+    title: 'Building Project',
+    description: 'General contracting work',
+    image: '/images/construction1.jpeg',
+  },
+  {
+    id: 19,
+    category: 'construction',
+    title: 'Construction Site',
+    description: 'Building materials and supplies',
+    image: '/images/construction2.jpeg',
+  },
+  {
+    id: 20,
+    category: 'construction',
+    title: 'Building Finishes',
+    description: 'Professional construction services',
+    image: '/images/construction3.jpeg',
+  },
 ];
 
 const categories = [
@@ -160,6 +181,7 @@ const categories = [
   { id: 'flooring', label: 'Flooring' },
   { id: 'agriculture', label: 'Agriculture' },
   { id: 'logistics', label: 'Logistics' },
+  { id: 'construction', label: 'Construction' },
 ];
 
 export default function Gallery() {

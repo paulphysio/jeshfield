@@ -5,6 +5,7 @@ import LoadingScreen from './components/LoadingScreen';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import CompanyProfile from './components/CompanyProfile';
 import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
 import Gallery from './components/Gallery';
@@ -24,6 +25,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <About />
+        <CompanyProfile />
         <Services />
         <WhyChooseUs />
         <Gallery />

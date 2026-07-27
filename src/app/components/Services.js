@@ -7,6 +7,7 @@ import {
   HiColorSwatch, 
   HiOutlineTruck, 
   HiOutlineHome,
+  HiOutlineOfficeBuilding,
   HiArrowRight
 } from 'react-icons/hi';
 
@@ -15,7 +16,7 @@ const services = [
     icon: HiColorSwatch,
     title: 'Epoxy Flooring',
     subtitle: 'Luxury Interior Solutions',
-    description: 'Stunning, durable epoxy floors for homes and businesses.',
+    description: 'We design and install premium epoxy flooring systems that combine durability with striking visual appeal, for residential, commercial, and industrial spaces alike.',
     features: ['Metallic Epoxy Finishes', '3D Floor Designs', 'Industrial Coatings', 'Decorative Flakes'],
     color: 'from-accent/20 to-accent/5',
     borderColor: 'border-accent/30',
@@ -24,8 +25,8 @@ const services = [
     icon: HiOutlineHome,
     title: 'Agriculture',
     subtitle: 'Premium Farm Products',
-    description: 'Fresh snails, catfish, poultry, vegetables & more. Farm to table.',
-    features: ['Live Snails & Catfish', 'Fresh Vegetables', 'Poultry Products', 'Seafood & Crayfish'],
+    description: 'Our agricultural arm produces and supplies fresh, high-quality farm produce, raised and processed to meet both local and export standards.',
+    features: ['Live Snails & Catfish', 'Fresh Vegetables & Cassava', 'Poultry & Turkey Products', 'Seafood, Crayfish & Periwinkle'],
     color: 'from-primary/20 to-primary/5',
     borderColor: 'border-primary/30',
   },
@@ -33,10 +34,19 @@ const services = [
     icon: HiOutlineTruck,
     title: 'Logistics',
     subtitle: 'Precision Delivery Services',
-    description: 'Fast, reliable delivery across Nigeria. Your goods, our priority.',
+    description: 'We move goods safely and on schedule, giving businesses and individuals dependable logistics support from pickup to final delivery.',
     features: ['Express Delivery', 'Bulk Transportation', 'Warehousing', 'Nationwide Coverage'],
     color: 'from-dark/20 to-dark/5',
     borderColor: 'border-dark/30',
+  },
+  {
+    icon: HiOutlineOfficeBuilding,
+    title: 'General Contracting & Supplies',
+    subtitle: 'Building Solutions & Materials',
+    description: 'From roofing and POP ceiling work to industrial cleaning and full building finishing, our contracting team handles projects end-to-end.',
+    features: ['Roofing & POP Ceilings', 'Building Finishes & Painting', 'Industrial Cleaning & Pest Control', 'Building Materials Supply'],
+    color: 'from-accent/20 to-accent/5',
+    borderColor: 'border-accent/30',
   },
 ];
 
@@ -74,13 +84,13 @@ export default function Services() {
           </h2>
           <div className="gold-line mx-auto" />
           <p className="text-cream/70 mt-6 max-w-2xl mx-auto">
-            Excellence across three core industries. Each service delivered with precision, 
+            Excellence across four core industries. Each service delivered with precision, 
             passion, and an unwavering commitment to quality.
           </p>
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}

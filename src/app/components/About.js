@@ -97,7 +97,7 @@ export default function About() {
               Excellence in Every Detail
             </h3>
             <p className="text-dark/70 text-lg mb-6">
-              Premium epoxy flooring, sustainable agriculture, and precision logistics. 
+              Premium epoxy flooring, sustainable agriculture, precision logistics, and general contracting. 
               We deliver quality that speaks for itself.
             </p>
 
